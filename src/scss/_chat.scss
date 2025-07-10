@@ -1,0 +1,182 @@
+@import './variables';
+.chat-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+  max-height: 100vh;
+  overflow: hidden;
+  background-color: $primaryTheme;
+  label {
+    margin: 0;
+  }
+  .messaging-wrapper {
+    flex: 1;
+    background-color: var(--msg-list__background);
+    .pn-msg-list-scroller {
+      height: calc(100% - 154px);
+    }
+    .pn-msg-input {
+      position: absolute;
+      bottom: 0;
+      width: calc(100% - 438px);
+    };
+
+    .channel-name {
+      padding: var(--msg__padding);
+      background-color: #003651;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      h3 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 14px;
+        font-weight: 100;
+        padding-left: 28px;
+      }
+    }
+    .theme-selector {
+      display: flex;
+      justify-content: flex-end;
+      gap: 8px;
+      padding: 15px;
+      &.dark {
+        background-color: var(--chat--dark__background--1);
+        button {
+          color: var(--chat--dark__background--1);
+        }
+      }
+      &.light {
+        background-color: var(--chat--light__background--1);
+        button {
+          color: var(--chat--light__background--1);
+        }
+      }
+      button {
+        background-color: #cecece;
+        border-radius: 4px;
+        border: none;
+        &.active {
+          box-shadow: 0px 0px 5px 3px rgba(255,255,255, 0.2);
+        }
+        svg {
+          height: 15px;
+          width: 15px;
+        }
+      }
+    }
+  };
+  .channel-lists > div {
+    height: 100%;
+  }
+  .channel-lists {
+    padding-top: 36px;
+    background: $gradientColor;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    .pn-channel-list {
+      padding-left: clamp(20px, 42px, 42px);
+      padding-right: clamp(20px, 42px, 42px);
+      background: $gradientColor;
+      .pn-channel--active {
+        background: rgba(255,255,255, 0.2);
+      }
+      .pn-channel__name {
+        color: #fff;
+      }
+      .pn-channel:hover {
+        background: rgba(255,255,255, 0.2);
+      }
+    }
+    h3 {
+      color: #FFFFFF;
+      font-family: 'Poppins', sans-serif;
+      font-weight: lighter;
+      text-transform: uppercase;
+      padding-left: clamp(20px, 42px, 42px);
+      letter-spacing: 0.325em;
+      font-size: 18px;
+      margin: 0;
+    }
+  }
+
+  .member-list {
+    .member-search {
+      position: relative;
+      width: 100%;
+      padding: 10px 16px;
+      input {
+        width: 100%;
+        border: none;
+        padding: 8px;
+        font-size: 12px;
+      }
+      button {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: linear-gradient(180deg, #924990 0%, #B93D45 100%);
+        border-radius: 50%;
+        border: none;
+        color: #fff;
+        svg {
+          height: 15px;
+          width: 15px;
+        }
+      }
+    }
+    &.dark {
+      background-color: var(--chat--dark__background--1);
+      .single-member {
+        color: var(--chat--light__background--1);
+      }
+      .member-search {
+        input {
+          color: var(--chat--light__background--1);
+        }
+      }
+    }
+    &.light {
+      background-color: var(--chat--light__background--1);
+      .single-member {
+        color: var(--chat--dark__background--1);
+      }
+      .member-search {
+        input {
+          color: var(--chat--dark__background--1);
+        }
+      }
+    }
+    .whos-online {
+      padding: 32px 24px;
+      background-color: $primaryTheme;
+      h3 {
+        line-height: 1;
+        color: #fff;
+        span {
+          display: block;
+          font-size: 32px;
+          padding-left: 28px;
+        }
+      }
+    }
+    .members {
+      margin-top: 28px;
+      display: flex;
+      flex-direction: column;
+      .single-member {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        padding: 8px 18px;
+      }
+    }
+  }
+}

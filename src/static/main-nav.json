@@ -1,0 +1,53 @@
+[
+  {
+    "pathName": "NFT",
+    "count": "nfts",
+    "path": "/dashboard/nfts"
+  },
+  {
+    "pathName": "Launchpad",
+    "count": "campaigns",
+    "path": "/dashboard/campaigns"
+  },
+  {
+    "pathName": "My Wallet",
+    "count": false,
+    "path": "/dashboard/my-wallet"
+  },
+  {
+    "pathName": "KYB",
+    "count": "kyb",
+    "path": "/admin/kyb",
+    "admin": true
+  },
+  {
+    "pathName": "Brands",
+    "count": "users",
+    "path": "/admin/brands",
+    "admin": true
+  },
+  {
+    "pathName": "Leads",
+    "count": "leads",
+    "path": "/admin/leads",
+    "admin": true
+  },
+  {
+    "pathName": "Campaigns",
+    "count": "campaigns",
+    "path": "/admin/campaigns",
+    "admin": true
+  },
+  {
+    "pathName": "Nfts",
+    "count": "nfts",
+    "path": "/admin/nfts",
+    "admin": true
+  },
+  {
+    "pathName": "Reports",
+    "count": "reports",
+    "path": "/admin/reports",
+    "admin": true
+  }
+]

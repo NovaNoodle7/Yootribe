@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Draft NFT",
+    "type": "draft"
+  },
+  {
+    "name": "Campaign ready NFT",
+    "type": "ready"
+  },
+  {
+    "name": "Live NFT",
+    "type": "live"
+  }
+]

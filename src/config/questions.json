@@ -1,0 +1,339 @@
+[{
+  "question": "Email",
+  "categoryLabel":  "forceRequired",
+  "preSelectedOrder": 0,
+  "formName": "email",
+  "type": "email",
+  "lengthLimit": 80
+},{
+  "question": "Password",
+  "categoryLabel":  "forceRequired",
+  "preSelectedOrder": 1,
+  "formName": "password",
+  "type": "password",
+  "lengthLimit": 80
+},{
+  "question": "First Name",
+  "categoryLabel": "forceRequired",
+  "preSelectedOrder": 2,
+  "formName": "first_name",
+  "type": "text",
+  "lengthLimit": 80
+},{
+  "question": "Last Name",
+  "categoryLabel":  "forceRequired",
+  "preSelectedOrder": 3,
+  "formName": "last_name",
+  "type": "text",
+  "lengthLimit": 80
+},{
+  "question": "Username",
+  "categoryLabel":  "forceRequired",
+  "preSelectedOrder": 4,
+  "formName": "username",
+  "type": "text",
+  "lengthLimit": 80
+},{
+  "question": "Phone number",
+  "categoryLabel":  "forceRequired",
+  "preSelectedOrder": 5,
+  "formName": "phone_number",
+  "type": "phone",
+  "lengthLimit": 20
+},{
+  "question": "You are",
+  "categoryLabel":  "USER PROFILE",
+  "type": "select",
+  "lengthLimit": 1,
+  "choices": [
+    "Male",
+    "Female",
+    "Other"
+  ]
+},{
+  "question": "What city do you live ?",
+  "categoryLabel":  "USER PROFILE",
+  "type": "text",
+  "lengthLimit": 80
+},{
+  "question": "What is your marital situation ?",
+  "categoryLabel":  "USER PROFILE",
+  "type": "select",
+  "lengthLimit": 1,
+  "choices": [
+    "Single",
+    "Married"
+  ]
+},{
+  "question": "How many children do you have ?",
+  "categoryLabel":  "USER PROFILE",
+  "type": "number",
+  "lengthLimit": 10
+},{
+  "question": "Level of education",
+  "categoryLabel":  "USER PROFILE",
+  "type": "select",
+  "lengthLimit": 1,
+  "choices": [
+    "High school diploma",
+    "College/technical school",
+    "Associate degree",
+    "Bachelor's degree",
+    "Graduate or professional degree"
+  ]
+},{
+  "question": "What is your occupation ?",
+  "categoryLabel":  "USER PROFILE",
+  "type": "select",
+  "lengthLimit": 1,
+  "choices": [
+    "Executive",
+    "Manager",
+    "Professional",
+    "Technician",
+    "Administrative support",
+    "Sales",
+    "Skilled laborer",
+    "Service worker",
+    "Other"
+  ]
+},{
+  "question": "What is your income range ?",
+  "categoryLabel":  "USER PROFILE",
+  "type": "select",
+  "lengthLimit": 1,
+  "choices": [
+    "Less than $20,000 per year",
+    "$20,000 - $39,999 per year",
+    "$40,000 - $59,999 per year",
+    "$60,000 - $79,999 per year",
+    "$80,000 - $99,999 per year",
+    "$100,000 - $149,999 per year",
+    "$150,000 or more per year"
+  ]
+},{
+  "question": "Are you planning to purchase a property ?",
+  "categoryLabel":  "USER INTENTION",
+  "type": "select",
+  "lengthLimit": 1,
+  "choices": [
+    "Yes",
+    "No",
+    "Maybe"
+  ]
+},{
+  "question": "Are you planning to purchase a vehicle ?",
+  "categoryLabel":  "USER INTENTION",
+  "type": "select",
+  "lengthLimit": 1,
+  "choices": [
+    "Yes",
+    "No",
+    "Maybe"
+  ]
+},{
+  "question": "Are you planning to travel to a foreign country ?",
+  "categoryLabel":  "USER INTENTION",
+  "type": "select",
+  "lengthLimit": 1,
+  "choices": [
+    "Yes",
+    "No",
+    "Maybe"
+  ]
+},{
+  "question": "What is your Facebook address ?",
+  "categoryLabel":  "SOCIAL NETWORK",
+  "type": "text",
+  "lengthLimit": 80
+},{
+  "question": "What is your Twitter address ?",
+  "categoryLabel":  "SOCIAL NETWORK",
+  "type": "text",
+  "lengthLimit": 80
+},{
+  "question": "What is your Discord address ?",
+  "categoryLabel":  "SOCIAL NETWORK",
+  "type": "text",
+  "lengthLimit": 80
+},{
+  "question": "What is your Telegram address ?",
+  "categoryLabel":  "SOCIAL NETWORK",
+  "type": "text",
+  "lengthLimit": 80
+},{
+  "question": "What is your Instagram address ?",
+  "categoryLabel":  "SOCIAL NETWORK",
+  "type": "text",
+  "lengthLimit": 80
+},{
+  "question": "How did you hear about us ?",
+  "categoryLabel":  "QUESTIONNAIRE",
+  "type": "select",
+  "lengthLimit": 1,
+  "choices": [
+    "Friends",
+    "Print",
+    "Radio",
+    "TV",
+    "Internet"
+  ]
+},{
+  "question": "Have you ever purchased a product from us ?",
+  "categoryLabel":  "QUESTIONNAIRE",
+  "type": "select",
+  "lengthLimit": 1,
+  "choices": [
+    "Yes",
+    "No"
+  ]
+},{
+  "question": "Do you have any plans to buy a product from us soon ?",
+  "categoryLabel":  "QUESTIONNAIRE",
+  "type": "select",
+  "lengthLimit": 1,
+  "choices": [
+    "Yes",
+    "No",
+    "Maybe"
+  ]
+},{
+  "question": "Is there anything you would like us to know about this airdrop ?",
+  "categoryLabel":  "QUESTIONNAIRE",
+  "type": "text",
+  "lengthLimit": 80
+},{
+  "question": "What is your favorite food ?",
+  "categoryLabel":  "USER INTERESTS",
+  "type": "select",
+  "lengthLimit": 1,
+  "choices": [
+    "Italian",
+    "Mexican",
+    "Chinese",
+    "Japanese",
+    "Indian",
+    "Thai",
+    "French",
+    "Greek",
+    "Mediterranean",
+    "American",
+    "Middle Eastern",
+    "Vietnamese",
+    "Korean",
+    "Caribbean",
+    "Spanish",
+    "Brazilian",
+    "German",
+    "Cajun/Creole",
+    "Ethiopian",
+    "Turkish"
+  ]
+},{
+  "question": "What is your favorite color ?",
+  "categoryLabel":  "USER INTERESTS",
+  "type": "select",
+  "lengthLimit": 1,
+  "choices": [
+    "Red",
+    "Blue",
+    "Green",
+    "Yellow",
+    "Orange",
+    "Purple",
+    "Pink",
+    "Brown",
+    "Black",
+    "White",
+    "Gray",
+    "Silver",
+    "Gold",
+    "Beige",
+    "Turquoise",
+    "Navy",
+    "Maroon",
+    "Lavender",
+    "Teal",
+    "Olive"
+  ]
+},{
+  "question": "What is your favorite sport ?",
+  "categoryLabel":  "USER INTERESTS",
+  "type": "select",
+  "lengthLimit": 1,
+  "choices": [
+    "Basketball",
+    "Tennis",
+    "Golf",
+    "American football",
+    "Baseball",
+    "Volleyball",
+    "Rugby",
+    "Cricket",
+    "Swimming",
+    "Running/Track and Field",
+    "Gymnastics",
+    "Martial Arts ",
+    "Boxing",
+    "Wrestling",
+    "Ice Hockey",
+    "Figure Skating",
+    "Snowboarding",
+    "Skiing",
+    "Surfing"
+  ]
+},{
+  "question": "What is your favorite music ?",
+  "categoryLabel":  "USER INTERESTS",
+  "type": "select",
+  "lengthLimit": 1,
+  "choices": [
+    "Rock",
+    "Pop",
+    "Hip Hop/Rap",
+    "R&B/Soul",
+    "Country",
+    "Jazz",
+    "Blues",
+    "Classical",
+    "Electronic/Dance",
+    "Reggae",
+    "Funk",
+    "Heavy Metal",
+    "Indie/Alternative",
+    "Folk",
+    "World Music",
+    "Latin",
+    "Gospel/Christian",
+    "Punk",
+    "EDM",
+    "Ambient/Chillout"
+  ]
+},{
+  "question": "What is your favorite hobby ?",
+  "categoryLabel":  "USER INTERESTS",
+  "type": "select",
+  "lengthLimit": 1,
+  "choices": [
+    "Reading",
+    "Writing",
+    "Painting/Drawing/Sketching",
+    "Photography",
+    "Cooking/Baking",
+    "Gardening",
+    "Playing a musical instrument",
+    "Singing",
+    "Dancing",
+    "Acting/Theater",
+    "Sewing/Knitting/Crocheting",
+    "DIY/Crafting",
+    "Collecting ",
+    "Playing video games",
+    "Watching movies/TV shows",
+    "Traveling",
+    "Hiking/Camping",
+    "Fitness/Exercise ",
+    "Meditation/Mindfulness",
+    "Volunteer work/Community service"
+  ]
+}]

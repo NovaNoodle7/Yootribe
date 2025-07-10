@@ -1,0 +1,1034 @@
+@use './variables';
+
+.dashboard-content {
+  flex: 1;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  width: auto;
+}
+
+.nft-nav-buttons-wrapper {
+  padding: 30px 0;
+
+  &.w-bg {
+    background-color: #f5f6f8;
+  }
+}
+
+.nft-nav-buttons {
+  display: flex;
+  flex-direction: row;
+  grid-gap: 25px;
+  gap: 25px;
+  width: 100%;
+  width: 100%;
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  button {
+    text-align: right;
+    padding: 13px 18px;
+    color: $buttonText;
+    border-radius: 10px;
+    border: 1px solid $borderLight;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+    background-color: $fullWhite;
+    transition: all 0.3s;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+
+    flex-shrink: 0;
+
+    .nft-count {
+      font-size: 10px;
+      background-color: $buttonText;
+      color: $fullWhite;
+      border-radius: 50%;
+      height: 17px;
+      width: 17px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.3s;
+    }
+
+    &:hover {
+      background-color: $buttonText;
+      color: $fullWhite;
+      cursor: pointer;
+
+      .nft-count {
+        background-color: $fullWhite;
+        color: $buttonText;
+      }
+    }
+
+    &.active {
+      color: $fullWhite;
+      background-color: $buttonText;
+      border: solid 1px #fff;
+
+      .nft-count {
+        background-color: $fullWhite;
+        color: $buttonText;
+      }
+    }
+  }
+}
+
+.content-header {
+  background-image: url('../assets/img/bg-img.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  padding: 28px 0;
+  flex: 1;
+  min-width: 0;
+
+  .head-content {
+    color: $fullWhite;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 30px;
+    gap: 10px;
+    font-family: $poppins;
+
+    h2 {
+      font-size: 40px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: 500;
+      margin: 0;
+      max-width: 65%;
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .head-content p {
+      max-width: 100%;
+    }
+  }
+
+  .nft-nav-buttons {
+    margin-top: 40px;
+
+    .active {
+      border: 1px solid #fff;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .head-content {
+      p {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+.breadcrumbs-wrapper {
+  display: flex;
+  flex-direction: row;
+  grid-gap: 5px;
+  gap: 5px;
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 20px;
+  align-items: center;
+
+  button {
+    color: $fullWhite;
+    background-color: transparent;
+    letter-spacing: 0.5px;
+    border: none;
+    line-height: normal;
+
+    &.active {
+      color: $primaryTheme;
+    }
+
+    &.root-nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+    }
+
+    img {
+      margin-top: -2px;
+    }
+  }
+
+  .breadcrumb-separator {
+    color: $fullWhite;
+    font-size: 10px;
+  }
+}
+
+
+.dIoWVq {
+  max-width: 320px;
+  min-width: 200px;
+  display: flex !important;
+}
+
+.content-nft-confirmation {
+  padding: 30px 0 !important;
+  background-color: #edf3f5 !important;
+  border-top: 1px solid #c3d5dc;
+  border-bottom: 1px solid #c3d5dc;
+}
+
+.content-nft-payement {
+  padding: 45px 0;
+  background-color: white;
+}
+
+.form-footer {
+  display: flex;
+  justify-content: center;
+  grid-gap: 16px;
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.nft-content {
+  padding: 45px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: white;
+  flex: 1 0 auto;
+  min-width: 0;
+  max-width: 100%;
+
+
+  .create-listed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    color: $buttonText;
+    font-weight: 600;
+
+    margin-bottom: 30px;
+  }
+
+  .table-responsive {
+    max-width: 100%;
+  }
+
+
+  .main-table-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 0;
+
+    .table-actions.button-compaign {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 5px;
+
+      &.has-three-actions {
+        justify-content: space-between;
+        gap: 0;
+      }
+
+      .preview {
+        margin-top: -1px !important;
+
+        img {
+          margin-top: 2px !important;
+        }
+
+        span {
+          margin-top: 12px !important;
+        }
+
+
+      }
+
+      .golive {
+        span {
+          margin-top: 11.2px !important;
+        }
+      }
+
+      button {
+        background-color: transparent;
+        font-size: 10px;
+        font-family: Arial, sans-serif;
+        font-weight: normal;
+        color: #05506d;
+        text-transform: uppercase;
+        text-align: center;
+        display: flex;
+        padding: 0 10px;
+        flex-direction: column;
+        align-items: center;
+        border: none;
+        width: 60px;
+        height: 50px;
+
+        span {
+          margin-top: 10px;
+        }
+
+        &:disabled {
+          opacity: 0.5;
+        }
+      }
+
+      .live-button {
+        background-color: $buttonText;
+      }
+    }
+
+
+
+
+    .table-actions.live-view-compaign {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 5px;
+
+      &.has-three-actions {
+        justify-content: space-between;
+        gap: 0;
+      }
+
+      button {
+        background-color: transparent;
+        font-size: 10px;
+        font-family: Arial, sans-serif;
+        font-weight: normal;
+        color: #05506d;
+        text-transform: uppercase;
+        text-align: left;
+        display: flex;
+        padding: 0 10px;
+        // display: flex;
+        // align-items: center;
+        flex-direction: column;
+        align-items: center;
+        border: none;
+        text-align: center;
+
+        span {
+          margin-top: 10px;
+        }
+
+        &:disabled {
+          opacity: 0.5;
+        }
+      }
+
+      .live-button {
+        background-color: $buttonText;
+      }
+    }
+
+
+    .table-actions {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 5px;
+
+      &.has-three-actions {
+        justify-content: space-between;
+        gap: 0;
+      }
+
+      &.nft-button {
+        justify-content: space-between;
+        gap: 0;
+
+        .centerButton{
+          position: absolute;
+          left: -11px;
+          right: 0;
+        }
+      }
+
+      button {
+        background-color: transparent;
+        font-size: 10px;
+        font-family: Arial, sans-serif;
+        font-weight: normal;
+        color: #05506d;
+        text-transform: uppercase;
+        text-align: left;
+        display: flex;
+        padding: 0 10px;
+        // display: flex;
+        // align-items: center;
+        flex-direction: column;
+        align-items: center;
+        border: none;
+
+        span {
+          margin-top: 10px;
+        }
+
+        &:disabled {
+          opacity: 0.5;
+        }
+      }
+
+      .live-button {
+        background-color: $buttonText;
+      }
+    }
+
+    .status-button {
+      display: flex;
+      align-items: center;
+
+      button {
+        background-color: transparent;
+        border: none;
+        display: flex;
+        justify-content: 'center';
+        align-items: 'center';
+        color: #ea8f0c;
+      }
+
+      svg {
+        height: 15px;
+        width: 15px;
+      }
+    }
+  }
+
+  .formik-form {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 30px;
+    gap: 30px;
+
+    h3 {
+      font-size: 20px;
+      font-family: Arial, sans-serif;
+      font-weight: normal;
+      color: #05506d;
+      margin-bottom: 0;
+    }
+
+    .title-collect-data {
+      margin-bottom: -19px;
+    }
+
+    .inputs-two-cells {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 30px;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .inputs-one-cell {
+      display: flex;
+      flex-direction: column;
+
+      h3 {
+        font-size: 20px;
+        font-family: Arial, sans-serif;
+        font-weight: normal;
+        color: #05506d;
+        margin-bottom: 10px;
+      }
+    }
+
+    .nft-image {
+      max-width: 200px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    .create-listed {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .formik-form .inputs-two-cells {
+      grid-template-columns: auto;
+    }
+  }
+}
+
+.nft-confirmation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  grid-gap: 20px;
+  gap: 20px;
+
+  .nft-info {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+    gap: 20px;
+    flex: 1 1 45%;
+
+    h3 {
+      font-size: 20px;
+    }
+
+    span {
+      font-size: 24px;
+    }
+  }
+
+  .nft-preview {
+    img {
+      max-width: 50%;
+    }
+
+    h3 {
+      font-size: 20px;
+    }
+
+    flex: 0 1 45%;
+  }
+}
+
+.subscriptions {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  .single-subscription {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+    gap: 20px;
+    border: solid 2px $primaryTheme;
+    padding: 20px;
+    border-radius: 5px;
+    transition: all 0.5s;
+
+    h3,
+    p,
+    em {
+      margin: 0;
+      padding: 0;
+    }
+
+    em {
+      opacity: 0.7;
+    }
+
+    .price {
+      color: $buttonText;
+      font-size: 18px;
+    }
+
+    &.active {
+      background-color: $primaryTheme;
+      border: solid 2px $buttonText;
+
+      button {
+        background-color: $buttonText;
+      }
+    }
+  }
+}
+
+.payment-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.campaign-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.modal-footer-main {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  grid-gap: 30px;
+}
+
+.wysiwyg-editor {
+  border: 2px solid #eee;
+  border-radius: 10px;
+  min-height: 400px;
+
+  .rdw-editor-main {
+    height: unset;
+  }
+
+  .DraftEditor-root {
+    padding: 0 15px;
+  }
+
+  .rdw-editor-toolbar {
+    box-shadow: 0 2px 2px -2px rgb(34 47 62 / 10%), 0 8px 8px -4px rgb(34 47 62 / 7%);
+  }
+}
+
+.nft-nav {
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  button {
+    text-align: right;
+    padding: 13px 18px;
+    color: #05506d;
+    border-radius: 10px;
+    border: 1px solid #c2c7cf;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+    background-color: #fff;
+    transition: all 0.3s;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+
+    .nft-count {
+      font-size: 10px;
+      background-color: $buttonText;
+      color: $fullWhite;
+      border-radius: 50%;
+      height: 17px;
+      width: 17px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.3s;
+    }
+
+    &:hover {
+      background-color: $buttonText;
+      color: $fullWhite;
+      cursor: pointer;
+
+      .nft-count {
+        background-color: $fullWhite;
+        color: $buttonText;
+      }
+    }
+
+    &.active {
+      color: $fullWhite;
+      background-color: $buttonText;
+      border: solid 1px transparent;
+
+      .nft-count {
+        background-color: $fullWhite;
+        color: $buttonText;
+      }
+    }
+  }
+}
+
+.add-new-options {
+  display: flex;
+  gap: 15px;
+  grid-gap: 15px;
+}
+
+.campaign-preview {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  overflow: hidden;
+  width: 100%;
+
+  .campaign-banner {
+    max-height: 150px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .campaign-content {
+    display: flex;
+    margin-top: 10px;
+    gap: 15px;
+
+    img {
+      max-width: 100px;
+      height: 100px;
+    }
+
+    .campaign-text {
+      display: flex;
+      flex-direction: column;
+
+      .campaign-keywords {
+        display: flex;
+        gap: 5px;
+
+        p {
+          background-color: $primary;
+          color: #fff;
+          border-radius: 10px;
+          padding: 3px 10px;
+        }
+      }
+    }
+  }
+}
+
+.multiple-options .multiple-options-option {
+  margin-top: 1rem;
+}
+
+.add-option {
+  max-width: 150px;
+  background-color: transparent;
+  border: solid 2px #05506d;
+  color: #05506d;
+  padding: 5px 25px;
+  border-radius: 7px;
+  margin-left: auto;
+  margin-top: 1rem;
+  font-size: 15px;
+}
+
+.multiple-options-option {
+  display: flex;
+  width: 100%;
+  flex: 1;
+  flex-direction: column;
+  position: relative;
+}
+
+.multiple-options-option .action-button.circle {
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+}
+
+.multiple-options-option .action-button:hover {
+  background-color: #ea8f0c;
+  color: #fff;
+  border: solid 2px #ea8f0c;
+}
+
+.multiple-options-title {
+  width: 100%;
+  display: flex;
+}
+
+.multiple-options-title input {
+  width: 100%;
+}
+
+.embla {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+
+  .embla__container {
+    display: flex;
+    gap: 20px;
+  }
+
+  .embla__slide {
+    flex: 0 0 100%;
+  }
+
+  .embla__slide__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+}
+
+.tooltip-wrapper {
+  position: relative;
+  display: flex;
+  width: fit-content;
+}
+
+.tooltip-container {
+  display: flex;
+  justify-content: center;
+}
+
+.tooltip {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  visibility: hidden;
+  padding: 5px;
+  border-radius: 5px;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  width: max-content;
+}
+
+.tooltip-arrow {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.7) transparent transparent;
+}
+
+.rdt_Pagination {
+  border-top-width: 0 !important;
+}
+
+.inputs-single-cell-checkboxes {
+  margin: 16px 0;
+}
+
+.nft-content .create-nft .inputs-single-cell-checkboxes {
+  margin: 0 0 !important;
+}
+
+.nft-content .create-nft .inputs-single-cell-checkboxes {
+  .label {
+    display: flex;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    color: #05506d;
+    margin-bottom: 10px !important;
+    margin-top: 4px !important;
+  }
+}
+
+.smiley-box {
+  position: absolute;
+  display: flex;
+  background-color: #f4f3f8;
+  right: 10px;
+  top: calc(-100% - 35px);
+  padding: 15px;
+  gap: 10px;
+  border-radius: 8px 8px 0px 8px;
+
+  button {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+  }
+}
+
+.ReactModal__Content {
+  position: fixed;
+  inset: 50% 40px 40px 50%;
+  border: none !important;
+  background: #044663 !important;
+  overflow: auto;
+  border-radius: 0 !important;
+  outline: none;
+  transform: translate(-50%, -50%);
+  width: 640px !important;
+  max-width: 640px !important;
+  min-height: unset !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  font-size: 14px;
+  gap: unset !important;
+  font-family: sans-serif;
+  font-weight: 500;
+  padding: 70px 80px !important;
+
+  .modal-body-main {
+    h2 {
+      font-size: 23px !important;
+      line-height: 25px !important;
+      font-family: Arial, sans-serif;
+      line-height: 25px;
+      font-weight: 400;
+    }
+  }
+
+  .add-to-compaign {
+    h2 {
+      font-size: 23px !important;
+      line-height: 25px !important;
+      font-family: Arial, sans-serif;
+      line-height: 25px;
+      font-weight: 400;
+    }
+  }
+
+  .create-create-compagn-modal {
+    p {
+      font-size: 20px !important;
+      line-height: 25px !important;
+      font-family: Arial, sans-serif;
+      font-weight: 400;
+      text-align: center;
+    }
+  }
+
+  .modal-footer-main {
+    display: flex;
+    justify-content: center;
+    gap: 34px !important;
+    grid-gap: 34px !important;
+    margin-top: 33px;
+
+    .action-button {
+      font-size: 18px;
+      width: 90px;
+      height: 30px;
+      border-radius: 0 !important;
+      border: 1px solid white !important;
+      font-weight: 400 !important;
+      text-transform: uppercase;
+    }
+  }
+}
+
+
+.footer-login {
+  position: relative;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #343434;
+
+  .bottomFooter {
+    position: relative;
+    background: #343434;
+    width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 68px;
+
+    .container-footer {
+      position: relative;
+      width: 100%;
+      max-width: 1428px;
+      margin-left: auto;
+      margin-right: auto;
+
+      img:first-of-type {
+        max-width: 70%;
+      }
+
+      .list {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: -webkit-box;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .item {
+          font-family: "Poppins", sans-serif;
+          position: relative;
+          color: #fff;
+          font-weight: 400;
+          font-size: 14px;
+          display: flex;
+          flex: 1;
+
+
+        }
+
+        .item.first {
+          flex-direction: column;
+          justify-content: inherit;
+          align-items: flex-start;
+        }
+
+        .item.first p {
+          margin-bottom: 0;
+        }
+
+        .item.first img {
+          width: 100px;
+          max-width: 100px;
+          margin-bottom: 6px;
+        }
+
+        .item.menu {
+          justify-content: center;
+          font-family: Arial, sans-serif;
+        }
+
+        .item.menu a {
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          color: #fff;
+          font-size: 14px;
+          font-weight: 400;
+        }
+
+        .item .link {
+          position: relative;
+          padding: 0 10px;
+        }
+
+
+        .item.last {
+          justify-content: flex-end;
+        }
+
+
+      }
+    }
+  }
+
+  .sub-footer {
+    background-color: #222222;
+    width: 100%;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      color: #fff;
+      font-size: 12px;
+      text-align: center;
+      margin-bottom: 0;
+      opacity: .5;
+    }
+  }
+}

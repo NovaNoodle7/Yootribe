@@ -1,0 +1,26 @@
+[
+  {
+    "stepName": "NFT Information",
+    "type": "info"
+  },
+  {
+    "stepName": "NFT Pricing",
+    "type": "pricing"
+  },
+  {
+    "stepName": "Confirmation",
+    "type": "confirmation"
+  },
+  {
+    "stepName": "Subscription",
+    "type": "subscription"
+  },
+  {
+    "stepName": "Packs",
+    "type": "packs"
+  },
+  {
+    "stepName": "Payment",
+    "type": "payment"
+  }
+]

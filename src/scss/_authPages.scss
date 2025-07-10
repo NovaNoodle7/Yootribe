@@ -1,0 +1,1380 @@
+.errors {
+  opacity: 0.8;
+  font-size: 14px;
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.campaign-preview-bar {
+  color: #6d6d6e;
+  font-size: 14px;
+
+  background-color: #edeef0;
+  border-color: #edeef0;
+
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 50px;
+
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.login-page {
+  transition: 0.5s ease-in;
+  height: 100vh;
+
+  .header-mobile {
+    display: none;
+  }
+
+  .login-container {
+    display: flex;
+    height: 100vh;
+
+    input {
+      min-width: 270px;
+      width: 100%;
+      height: 44px;
+
+      background: #ffffff;
+      border-radius: 10px;
+      border: none;
+
+      font-family: 'Arial';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 44px;
+      color: #2faace;
+    }
+
+    &>.switch-item {
+      width: 50%;
+
+      .forgot-pass-button,
+      .back-to-login {
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+        color: #ffffff;
+        margin-top: 18px;
+        display: block;
+        text-align: right;
+      }
+
+      .btn {
+        background: #2faace;
+        border-radius: 40px;
+        margin-top: 28px;
+      }
+
+      .input-actions {
+        .btn {
+          font-size: 18px;
+          line-height: 37px;
+          padding: 0px 27px;
+        }
+      }
+
+      .input-actions {
+        .btn-forgotPassword {
+          font-size: 18px;
+          line-height: 40px;
+          padding: 0px 25px !important;
+        }
+      }
+    }
+
+  }
+
+  .switch-routes {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+  }
+
+
+
+
+
+  .switch-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+
+    .plane_img {
+      position: absolute;
+      top: 99px;
+      right: 108px;
+    }
+
+    .consumer_shadow {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: auto;
+      width: 100%;
+    }
+
+    .consumer_alien {
+      position: absolute;
+      bottom: 0;
+      right: 25px;
+      width: auto;
+      height: auto;
+    }
+
+
+    .consumer_hill {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: auto;
+      width: 100%;
+    }
+
+    .consumer_Galaxy {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: auto;
+      height: auto;
+      mix-blend-mode: luminosity;
+    }
+
+    .consumer_astronote {
+      position: absolute;
+      bottom: 12px;
+      left: 66px;
+      height: auto;
+      width: auto;
+    }
+
+    .content-consumer {
+      margin-top: -17px;
+      margin-bottom: 17px;
+    }
+
+
+    .brand_plane {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: auto;
+      width: auto;
+    }
+
+    .brand_plane_mobile {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: auto;
+      width: auto;
+    }
+
+    .brand_start {
+      position: absolute;
+      top: 22px;
+      right: 0;
+      height: auto;
+      width: auto;
+      mix-blend-mode: soft-light;
+    }
+
+    .content-brand {
+      margin-top: -17px;
+      margin-bottom: 17px;
+    }
+
+    .btn {
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 50px;
+      border: none;
+
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 21px;
+      line-height: 44px;
+      color: #ffffff;
+
+      padding: 0 40px;
+
+      margin-top: 0;
+    }
+
+    p {
+      font-family: 'Arial';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 44px;
+      color: #ffffff;
+    }
+
+    h2 {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 49px;
+      line-height: 44px;
+      color: #ffffff;
+    }
+
+    h3 {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 44px;
+      color: #ffffff;
+
+      margin-bottom: 28px;
+    }
+
+    & * {
+      z-index: 2;
+    }
+
+    &>img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+
+    &>.switch-item {
+      width: 38%;
+    }
+
+    .switch-routes {
+      display: flex;
+      width: 62%;
+      flex-direction: column;
+      height: 100%;
+    }
+
+
+    .login-container>.switch-item {
+      width: 38%;
+    }
+
+    .switch-item>img {
+      object-fit: cover;
+    }
+
+    .switch-item h2 {
+      font-size: 40px !important;
+    }
+
+    .switch-item .btn {
+      font-size: 18px !important;
+      padding: 0 30px !important;
+    }
+
+  }
+
+  @media (min-width: 320px) and (max-width: 768px) {
+
+    .login-page {
+      height: 100vh;
+    }
+
+    .text-upper-connect {
+      line-height: 0 !important;
+      margin-bottom: 22px;
+    }
+
+    .header-mobile {
+      display: block;
+      background-color: #000000;
+      height: 40px;
+      width: 100%;
+
+      .content-header-mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 100%;
+
+        h1 {
+          color: white;
+          font-size: 19.43px;
+        }
+
+        .content-action {
+          height: 100%;
+          display: flex;
+          cursor: pointer;
+          align-items: center;
+
+          span {
+            color: white;
+            font-size: 13px;
+            margin-right: 10px;
+            text-transform: uppercase;
+          }
+
+          img {
+            height: 26px;
+            width: 26px;
+          }
+        }
+      }
+    }
+
+
+
+
+
+    .login-container {
+      height: calc(100vh - 40px);
+
+      .switch-routes {
+        width: 100%;
+        height: 100%;
+      }
+
+      .switch-routes-hide {
+        display: none;
+      }
+
+      .switch-item-mobile {
+        display: none;
+
+      }
+    }
+
+    .switch-item {
+      justify-content: start;
+      height: 50%;
+
+
+      .container-mobile-user {
+        padding-left: 50px;
+        margin-top: 80px;
+        margin-bottom: 157px;
+
+        .btn {
+          font-size: 17.81px;
+          width: 232px;
+          height: 36px;
+          padding-left: 30px;
+          padding-right: 30px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          line-height: 16px;
+        }
+
+        .text-upper-mobile {
+          font-size: 18px;
+        }
+      }
+
+      .container-mobile-brand {
+        padding-left: 50px;
+        margin-top: 87px;
+        margin-bottom: 159px;
+
+        .btn {
+          font-size: 17.81px;
+          width: 232px;
+          height: 36px;
+          padding-left: 30px;
+          padding-right: 30px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          line-height: 16px;
+        }
+
+        .text-upper-mobile {
+          font-size: 18px;
+        }
+      }
+    }
+
+
+    .switch-item h2 {
+      font-size: 42.07px;
+
+    }
+
+    .plane_img {
+      top: 79px !important;
+      right: 50px !important;
+
+      img {
+        width: 90px;
+        height: 52px;
+
+      }
+    }
+
+    .login-container>.switch-item {
+      width: 100% !important;
+      justify-content: center;
+      height: calc(100vh - 60px);
+
+    }
+
+    .consumer_Galaxy_mobile {
+      mix-blend-mode: luminosity !important;
+    }
+
+
+  }
+
+  @media (min-width: 320px) and (max-width: 540px) {
+    .brand_plane_mobile {
+      position: absolute;
+      bottom: 0;
+      right: -1px;
+      height: auto;
+      width: 233px !important;
+    }
+
+    .consumer_Galaxy_mobile {
+      height: auto !important;
+      width: 100% !important;
+      top: 0;
+      left: 0;
+      mix-blend-mode: luminosity;
+    }
+
+    .consumer_alien {
+      position: absolute;
+      bottom: 0;
+      right: 25px;
+      width: 110px !important;
+      height: auto;
+    }
+
+    .consumer_astronote {
+      position: absolute;
+      bottom: 12px;
+      left: 54px !important;
+      height: auto;
+      width: 45px !important;
+    }
+
+    .brand_start {
+      position: absolute;
+      top: 22px;
+      right: 0;
+      height: 258px !important;
+      width: auto;
+      mix-blend-mode: soft-light;
+    }
+
+    .switch-item .content-consumer {
+      margin-top: 10px !important;
+    }
+
+    .switch-item p {
+      line-height: 35px !important;
+    }
+  }
+
+
+
+  @media (min-width: 320px) and (max-width:340px) {
+
+    .container-mobile-user {
+      padding-left: 20px !important;
+    }
+
+    .container-mobile-brand {
+      padding-left: 20px !important;
+    }
+  }
+
+}
+
+.login-page {
+  .drawer {
+    width: 30%;
+    height: 100vh;
+
+    position: absolute;
+    right: 0;
+  }
+
+  .drawer .drawer-content {
+    z-index: 99999;
+    background: #1c86ab;
+    color: #fff;
+    min-width: 395px;
+    height: 100%;
+  }
+
+  .show-drawer .drawer-content {
+    right: 0;
+  }
+
+  .drawer.drawer-right::before {
+    content: '';
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: #0000005c;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.35s ease-in-out;
+  }
+
+  .show-drawer .drawer.drawer-right::before {
+    z-index: 999;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .drawer.drawer-right .login {
+    background-color: #14617e;
+    padding: 50px 40px;
+    padding-bottom: 0;
+  }
+
+  .drawer.drawer-right .register {
+    padding: 35px 40px;
+    padding-bottom: 0;
+  }
+
+  .drawer.drawer-right .register p {
+    margin-bottom: 0;
+  }
+
+  .forgot {
+    padding: 35px 40px;
+    padding-bottom: 0;
+  }
+
+  .drawer.drawer-right h3,
+  .drawer.drawer-right h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    margin-top: 35px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+
+  .drawer.drawer-right h4 {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .input-line+.input-line {
+    margin-top: 1rem;
+  }
+
+  .drawer .form-control,
+  .forgot-password-modal .form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+    height: 45px;
+  }
+
+  .drawer .input-line-info {
+    margin: 1rem 0;
+  }
+
+  .drawer .input-line-info a {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  .drawer form {
+    max-width: 270px;
+  }
+
+  .drawer .input-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 0;
+  }
+
+  .drawer-content .btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+      box-shadow 0.15s ease-in-out;
+
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #23a0c4;
+    border-radius: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    font-size: clamp(1rem, 1.6666666667rem, 1.3vw);
+
+    border-radius: 50px;
+    position: relative;
+    z-index: 99999;
+  }
+
+  .drawer-content .input-groups {
+    position: relative;
+  }
+
+  .drawer-content button.btn-small {
+    background: #14617e;
+    border: none;
+    font-weight: 600;
+    color: #40dbde;
+    height: 30px;
+    position: absolute;
+    right: 14px;
+    top: 8px;
+    border-radius: 6px;
+    padding: 0 0.6rem;
+  }
+
+  .usernameLogin,
+  .walletLogin {
+    min-width: 20vw !important;
+    width: 20vw !important;
+  }
+
+  .drawer-content .btn {
+    border-radius: 20px;
+    font-size: min(max(0.9166666667rem, 1.1vw), 1.2rem);
+    margin-left: 0;
+    background-color: #23272b;
+    border-color: transparent;
+    color: #fff;
+    transition: all 0.3s;
+  }
+
+  body .btn {
+    border-color: transparent;
+  }
+
+  .btn:hover {
+    color: #23272b;
+    background-color: #fff;
+  }
+
+  .drawer .errors,
+  .forgot-password-modal .errors {
+    color: red;
+    opacity: 0.8;
+    font-size: 14px;
+    margin-top: 5px;
+
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+  }
+
+  .drawer .input-actions {
+    display: block;
+  }
+
+  .forgot-password-modal {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999999999;
+    background-color: #35d6ed;
+    padding: 50px;
+    transform: translateX(-100%);
+    transition: all 0.3s;
+  }
+
+  .forgot-password-modal .forgot-password-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .forgot-password-modal .forgot-password-header a {
+    color: #fff;
+  }
+
+  .forgot-password-modal .forgot-password-header .go-back-button img {
+    vertical-align: middle;
+  }
+
+  .forgot-password-modal .forgot-password-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+  }
+
+  .forgot-password-modal .forgot-password-content .security-notice {
+    border: solid 1px white;
+    border-radius: 10px;
+    padding: 20px 50px;
+    color: #000;
+    font-weight: normal;
+  }
+
+  .forgot-password-modal .forgot-password-content a {
+    color: #fff;
+    margin: 20px 0;
+  }
+
+  .forgot-password-modal .forgot-password-content .security-notice p {
+    margin: 0;
+    font-weight: normal;
+  }
+
+  .forgot-password-modal .new-password-form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+
+  .forgot-password-modal .new-password-form .forgot-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 40%;
+    margin-top: 20px;
+    ul li{
+      align-items: center;
+    }
+  }
+
+  .forgot-password-modal .new-password-form .forgot-form input {
+    min-height: 55px;
+  }
+
+  .forgot-password-modal .new-password-form .forgot-form button {
+    align-self: center;
+  }
+
+  .forgot-password-modal .new-password-form .forgot-form p {
+    margin: 0;
+  }
+
+  .forgot-password-modal .new-password-form .forgot-form .error {
+    color: red;
+    opacity: 0.8;
+    font-size: 14px;
+  }
+
+  .forgot-password-modal p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  .forgot-password-modal h3 {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 1.75rem;
+  }
+
+  .forgot-password-modal .forgot-input-form {
+    position: relative;
+  }
+
+  .forgot-password-modal .forgot-input-form .next-forgot {
+    position: absolute;
+    top: 50%;
+    right: -60px;
+    margin: 0;
+    transform: translateY(-50%);
+
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+
+  .forgot-password-modal .form-control {
+    border-radius: 10px;
+  }
+
+  .forgot-password-modal .forgot-input-form input[type='text'] {
+    appearance: none;
+    -webkit-appearance: none;
+    height: 100px;
+    width: 50px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+    background-color: #2ebace;
+    color: #fff;
+    font-weight: 300;
+    font-size: 40px;
+    margin-right: 5px;
+  }
+
+  .forgot-password-modal .forgot-input-form input[type='text']:disabled {
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  .forgot-password-modal .forgot-input-form input[type='text']::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: 300;
+    font-size: 40px;
+  }
+
+  .forgot-password-modal .forgot-input-form input[type='text']::-webkit-outer-spin-button,
+  .forgot-password-modal .forgot-input-form input[type='text']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  .forgot-password-modal .btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+      box-shadow 0.15s ease-in-out;
+
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #23a0c4;
+    border-radius: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    font-size: clamp(1rem, 1.6666666667rem, 1.3vw);
+  }
+
+  .drawer .drawer-content .btn-gradient {
+    background: linear-gradient(90deg, #b93d46 0%, #94488b 100%);
+    color: #fff;
+    border: solid 1px transparent;
+  }
+
+  .drawer .drawer-content .btn-white:hover {
+    color: #fff;
+    background-color: #23272b;
+  }
+}
+
+.register-page {
+  min-height: 100vh;
+
+  .intl-tel-input {
+    width: 100%;
+
+    &.allow-dropdown input {
+      width: 100%;
+    }
+  }
+
+  &.body-bg .main_form {
+    background-image: url(../assets/img/body-bg.jpg);
+    background-size: contain;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-color: #1e8cb1;
+  }
+
+  &.user-bg .main_form {
+    background-image: url(../assets/img/user-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #1e8cb1;
+  }
+
+  .errors {
+    color: red;
+    opacity: 0.8;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+  }
+}
+
+.register-compaign-content {
+  width: 100%;
+  background-color: white;
+  height: auto;
+}
+
+.register-compaign-content-thanks {
+  width: 100%;
+  background-color: white;
+  height: 100vh;
+
+  .register-with-campaign {
+    width: calc(100% - 124px);
+    height: 100%;
+    margin: 0 auto;
+    padding: 18px 0 0 0 !important;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    .header {
+      border-radius: 10px 10px 20px 20px;
+      height: auto;
+      overflow: unset;
+      margin-bottom: 0 !important;
+
+      .banner_image img {
+        border-radius: 10px 10px 0 0;
+      }
+
+      .campaign-info {
+        border-radius: 0 0 20px 20px;
+      }
+    }
+
+    .container {
+      height: 100% !important;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+
+
+
+.register-with-campaign {
+  width: calc(100% - (2 * 62px));
+  margin: 0 auto;
+  padding: 18px 0 60px 0;
+  background-color: white;
+
+  .campaign-ended-content {
+    width: fit-content;
+    margin: 0 auto;
+    color: #000;
+    text-align: center;
+  }
+
+  .intl-tel-input {
+    width: 100%;
+
+    input {
+      width: 100%;
+    }
+
+
+  }
+        .error-input-number {
+          color: red;
+          font-size: 13px;
+        }
+  .header {
+    border-radius: 10px 10px 20px 20px;
+    overflow: hidden;
+    margin-bottom: 60px;
+
+    .banner_image {
+      width: 100%;
+      height: 293px;
+      object-fit: cover;
+    }
+
+    .logo {
+      width: 187px;
+      height: 187px;
+
+      position: absolute;
+      margin-top: -74px;
+      margin-left: 86px;
+    }
+
+    .banner_image,
+    .logo {
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .campaign-title {
+      width: 100%;
+      height: 62px;
+      background-color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 35px;
+      line-height: 18px;
+      text-align: center;
+      color: #ffffff;
+
+      h2 {
+        font-size: 35px !important;
+      }
+    }
+
+    .campaign-info {
+      padding: 34px 0 20px 357px;
+
+      display: flex;
+      align-items: stretch;
+      justify-content: start;
+
+      background-color: #efefef;
+
+      .campaign-info-item {
+        position: relative;
+        padding: 0 40px;
+
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 79%;
+        text-transform: uppercase;
+        color: #000000;
+
+        &.middle {
+          align-self: center;
+        }
+
+        .official-link {
+          background: #000000;
+          border-radius: 2px;
+          padding: 10px;
+
+          font-family: 'Poppins';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 13px;
+          line-height: 18px;
+          text-align: center;
+          color: #ffffff;
+
+          display: block;
+          width: fit-content;
+        }
+
+        p.title {
+          font-weight: 600;
+          line-height: 22px;
+          color: #000000;
+          text-transform: none;
+          margin-bottom: 16px;
+        }
+
+        .value {
+          font-weight: 600;
+          font-size: 15px;
+          line-height: 15px;
+
+          span {
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 32px;
+            color: #000000;
+          }
+
+          .crypto {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 22px;
+            color: #000000;
+
+            display: flex;
+            align-items: center;
+            gap: 8px;
+          }
+
+          sup {
+            top: -15px;
+            text-transform: capitalize;
+          }
+        }
+
+        &:after {
+          content: '';
+          border-right: 1px solid #8f8f8f;
+
+          position: absolute;
+          right: 0;
+          top: 0;
+          height: 100%;
+        }
+
+        &:first-child {
+          padding-left: 0;
+        }
+
+        &:last-child {
+          padding-right: 0;
+
+          &:after {
+            content: unset;
+          }
+        }
+      }
+    }
+  }
+
+  .campaign-content {
+    width: 70%;
+    margin: 0 auto 60px;
+  }
+
+  .container {
+    width: 60%;
+
+    .report-scam {
+      font-family: 'Arial';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.03em;
+      color: #6c757d;
+
+      margin: 30px auto 0;
+      width: fit-content;
+      display: block;
+      background-color: transparent;
+      border: 0;
+
+      svg {
+        margin-right: 8px;
+      }
+    }
+
+    label {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #000000;
+    }
+
+    input,
+    select {
+      border: 1px solid #c2c7cf;
+      border-radius: 10px;
+      color:#595959
+    }
+
+    .form-input-checkbox {
+      label {
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        cursor: pointer;
+        a {
+          font-family: 'Arial';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 18px;
+          color: #747474;
+          text-decoration: underline;
+        }
+      }
+      input{
+        cursor: pointer;
+      }
+    }
+
+    .btn.btn-submit {
+      display: block;
+
+      background: #8dc73f;
+      border-radius: 26px;
+      padding: 10px 23px;
+
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 19px;
+      line-height: 28px;
+      color: #ffffff;
+
+      margin: 70px auto 0;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    width: 100%;
+    padding-left: 23px;
+    padding-right: 23px;
+
+    .header {
+      .banner_image {
+        height: 149px;
+      }
+
+      .logo {
+        max-width: 69px;
+        max-height: 69px;
+        width: 100%;
+        height: 100%;
+        margin-top: -55px;
+        margin-left: 19px;
+      }
+
+      .campaign-info {
+        padding: 30px;
+        flex-wrap: wrap;
+
+        .campaign-info-item {
+          width: 50%;
+
+          &::after {
+            content: unset;
+          }
+
+          &:nth-child(1),
+          &:nth-child(3) {
+            padding-left: 0;
+            border-right: 1px solid #8f8f8f;
+          }
+
+          &:nth-child(1),
+          &:nth-child(2) {
+            padding-bottom: 10px;
+            border-bottom: 1px solid #8f8f8f;
+          }
+
+          &:nth-child(3),
+          &:nth-child(4) {
+            padding-top: 10px;
+          }
+        }
+      }
+    }
+
+    .campaign-content {
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .container {
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    width: 100%;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    .header {
+      .banner_image {
+        height: 224px;
+      }
+
+      .logo {
+        max-width: 110px;
+        max-height: 110px;
+        width: 100%;
+        height: 100%;
+        margin-left: 46px;
+      }
+
+      .campaign-info {
+        padding: 30px;
+      }
+    }
+
+    .campaign-content {
+      width: 100%;
+      padding-left: 48px;
+      padding-right: 48px;
+    }
+
+    .container {
+      width: 100%;
+      padding-left: 48px;
+      padding-right: 48px;
+    }
+  }
+}

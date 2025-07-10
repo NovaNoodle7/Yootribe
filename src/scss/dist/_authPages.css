@@ -1,0 +1,1108 @@
+.errors {
+  opacity: 0.8;
+  font-size: 14px;
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.campaign-preview-bar {
+  color: #6d6d6e;
+  font-size: 14px;
+  background-color: #edeef0;
+  border-color: #edeef0;
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.login-page {
+  transition: 0.5s ease-in;
+  height: 100vh;
+}
+.login-page .header-mobile {
+  display: none;
+}
+.login-page .login-container {
+  display: flex;
+  height: 100vh;
+}
+.login-page .login-container input {
+  min-width: 270px;
+  width: 100%;
+  height: 44px;
+  background: #ffffff;
+  border-radius: 10px;
+  border: none;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 44px;
+  color: #2faace;
+}
+.login-page .login-container > .switch-item {
+  width: 50%;
+}
+.login-page .login-container > .switch-item .forgot-pass-button,
+.login-page .login-container > .switch-item .back-to-login {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+  margin-top: 18px;
+  display: block;
+  text-align: right;
+}
+.login-page .login-container > .switch-item .btn {
+  background: #2faace;
+  border-radius: 40px;
+  margin-top: 28px;
+}
+.login-page .login-container > .switch-item .input-actions .btn {
+  font-size: 18px;
+  line-height: 37px;
+  padding: 0px 27px;
+}
+.login-page .login-container > .switch-item .input-actions .btn-forgotPassword {
+  font-size: 18px;
+  line-height: 40px;
+  padding: 0px 25px !important;
+}
+.login-page .switch-routes {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+}
+.login-page .switch-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.login-page .switch-item .plane_img {
+  position: absolute;
+  top: 99px;
+  right: 108px;
+}
+.login-page .switch-item .consumer_shadow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: auto;
+  width: 100%;
+}
+.login-page .switch-item .consumer_alien {
+  position: absolute;
+  bottom: 0;
+  right: 25px;
+  width: auto;
+  height: auto;
+}
+.login-page .switch-item .consumer_hill {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: auto;
+  width: 100%;
+}
+.login-page .switch-item .consumer_Galaxy {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  mix-blend-mode: luminosity;
+}
+.login-page .switch-item .consumer_astronote {
+  position: absolute;
+  bottom: 12px;
+  left: 66px;
+  height: auto;
+  width: auto;
+}
+.login-page .switch-item .content-consumer {
+  margin-top: -17px;
+  margin-bottom: 17px;
+}
+.login-page .switch-item .brand_plane {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: auto;
+  width: auto;
+}
+.login-page .switch-item .brand_plane_mobile {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: auto;
+  width: auto;
+}
+.login-page .switch-item .brand_start {
+  position: absolute;
+  top: 22px;
+  right: 0;
+  height: auto;
+  width: auto;
+  mix-blend-mode: soft-light;
+}
+.login-page .switch-item .content-brand {
+  margin-top: -17px;
+  margin-bottom: 17px;
+}
+.login-page .switch-item .btn {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+  border: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 44px;
+  color: #ffffff;
+  padding: 0 40px;
+  margin-top: 0;
+}
+.login-page .switch-item p {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 44px;
+  color: #ffffff;
+}
+.login-page .switch-item h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 49px;
+  line-height: 44px;
+  color: #ffffff;
+}
+.login-page .switch-item h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 44px;
+  color: #ffffff;
+  margin-bottom: 28px;
+}
+.login-page .switch-item * {
+  z-index: 2;
+}
+.login-page .switch-item > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .login-page > .switch-item {
+    width: 38%;
+  }
+  .login-page .switch-routes {
+    display: flex;
+    width: 62%;
+    flex-direction: column;
+    height: 100%;
+  }
+  .login-page .login-container > .switch-item {
+    width: 38%;
+  }
+  .login-page .switch-item > img {
+    object-fit: cover;
+  }
+  .login-page .switch-item h2 {
+    font-size: 40px !important;
+  }
+  .login-page .switch-item .btn {
+    font-size: 18px !important;
+    padding: 0 30px !important;
+  }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .login-page .login-page {
+    height: 100vh;
+  }
+  .login-page .text-upper-connect {
+    line-height: 0 !important;
+    margin-bottom: 22px;
+  }
+  .login-page .header-mobile {
+    display: block;
+    background-color: #000000;
+    height: 40px;
+    width: 100%;
+  }
+  .login-page .header-mobile .content-header-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100%;
+  }
+  .login-page .header-mobile .content-header-mobile h1 {
+    color: white;
+    font-size: 19.43px;
+  }
+  .login-page .header-mobile .content-header-mobile .content-action {
+    height: 100%;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+  }
+  .login-page .header-mobile .content-header-mobile .content-action span {
+    color: white;
+    font-size: 13px;
+    margin-right: 10px;
+    text-transform: uppercase;
+  }
+  .login-page .header-mobile .content-header-mobile .content-action img {
+    height: 26px;
+    width: 26px;
+  }
+  .login-page .login-container {
+    height: calc(100vh - 40px);
+  }
+  .login-page .login-container .switch-routes {
+    width: 100%;
+    height: 100%;
+  }
+  .login-page .login-container .switch-routes-hide {
+    display: none;
+  }
+  .login-page .login-container .switch-item-mobile {
+    display: none;
+  }
+  .login-page .switch-item {
+    justify-content: start;
+    height: 50%;
+  }
+  .login-page .switch-item .container-mobile-user {
+    padding-left: 50px;
+    margin-top: 80px;
+    margin-bottom: 157px;
+  }
+  .login-page .switch-item .container-mobile-user .btn {
+    font-size: 17.81px;
+    width: 232px;
+    height: 36px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 16px;
+  }
+  .login-page .switch-item .container-mobile-user .text-upper-mobile {
+    font-size: 18px;
+  }
+  .login-page .switch-item .container-mobile-brand {
+    padding-left: 50px;
+    margin-top: 87px;
+    margin-bottom: 159px;
+  }
+  .login-page .switch-item .container-mobile-brand .btn {
+    font-size: 17.81px;
+    width: 232px;
+    height: 36px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 16px;
+  }
+  .login-page .switch-item .container-mobile-brand .text-upper-mobile {
+    font-size: 18px;
+  }
+  .login-page .switch-item h2 {
+    font-size: 42.07px;
+  }
+  .login-page .plane_img {
+    top: 79px !important;
+    right: 50px !important;
+  }
+  .login-page .plane_img img {
+    width: 90px;
+    height: 52px;
+  }
+  .login-page .login-container > .switch-item {
+    width: 100% !important;
+    justify-content: center;
+    height: calc(100vh - 60px);
+  }
+  .login-page .consumer_Galaxy_mobile {
+    mix-blend-mode: luminosity !important;
+  }
+}
+@media (min-width: 320px) and (max-width: 540px) {
+  .login-page .brand_plane_mobile {
+    position: absolute;
+    bottom: 0;
+    right: -1px;
+    height: auto;
+    width: 233px !important;
+  }
+  .login-page .consumer_Galaxy_mobile {
+    height: auto !important;
+    width: 100% !important;
+    top: 0;
+    left: 0;
+    mix-blend-mode: luminosity;
+  }
+  .login-page .consumer_alien {
+    position: absolute;
+    bottom: 0;
+    right: 25px;
+    width: 110px !important;
+    height: auto;
+  }
+  .login-page .consumer_astronote {
+    position: absolute;
+    bottom: 12px;
+    left: 54px !important;
+    height: auto;
+    width: 45px !important;
+  }
+  .login-page .brand_start {
+    position: absolute;
+    top: 22px;
+    right: 0;
+    height: 258px !important;
+    width: auto;
+    mix-blend-mode: soft-light;
+  }
+  .login-page .switch-item .content-consumer {
+    margin-top: 10px !important;
+  }
+  .login-page .switch-item p {
+    line-height: 35px !important;
+  }
+}
+@media (min-width: 320px) and (max-width: 340px) {
+  .login-page .container-mobile-user {
+    padding-left: 20px !important;
+  }
+  .login-page .container-mobile-brand {
+    padding-left: 20px !important;
+  }
+}
+
+.login-page .drawer {
+  width: 30%;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+}
+.login-page .drawer .drawer-content {
+  z-index: 99999;
+  background: #1c86ab;
+  color: #fff;
+  min-width: 395px;
+  height: 100%;
+}
+.login-page .show-drawer .drawer-content {
+  right: 0;
+}
+.login-page .drawer.drawer-right::before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: #0000005c;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.35s ease-in-out;
+}
+.login-page .show-drawer .drawer.drawer-right::before {
+  z-index: 999;
+  opacity: 1;
+  visibility: visible;
+}
+.login-page .drawer.drawer-right .login {
+  background-color: #14617e;
+  padding: 50px 40px;
+  padding-bottom: 0;
+}
+.login-page .drawer.drawer-right .register {
+  padding: 35px 40px;
+  padding-bottom: 0;
+}
+.login-page .drawer.drawer-right .register p {
+  margin-bottom: 0;
+}
+.login-page .forgot {
+  padding: 35px 40px;
+  padding-bottom: 0;
+}
+.login-page .drawer.drawer-right h3,
+.login-page .drawer.drawer-right h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  margin-top: 35px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+.login-page .drawer.drawer-right h4 {
+  font-size: 16px;
+  margin: 0;
+}
+.login-page .input-line + .input-line {
+  margin-top: 1rem;
+}
+.login-page .drawer .form-control,
+.login-page .forgot-password-modal .form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  height: 45px;
+}
+.login-page .drawer .input-line-info {
+  margin: 1rem 0;
+}
+.login-page .drawer .input-line-info a {
+  color: #fff;
+  text-decoration: underline;
+}
+.login-page .drawer form {
+  max-width: 270px;
+}
+.login-page .drawer .input-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 0;
+}
+.login-page .drawer-content .btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  color: #23a0c4;
+  border-radius: 10px;
+  padding-left: 35px;
+  padding-right: 35px;
+  font-size: clamp(1rem, 1.6666666667rem, 1.3vw);
+  border-radius: 50px;
+  position: relative;
+  z-index: 99999;
+}
+.login-page .drawer-content .input-groups {
+  position: relative;
+}
+.login-page .drawer-content button.btn-small {
+  background: #14617e;
+  border: none;
+  font-weight: 600;
+  color: #40dbde;
+  height: 30px;
+  position: absolute;
+  right: 14px;
+  top: 8px;
+  border-radius: 6px;
+  padding: 0 0.6rem;
+}
+.login-page .usernameLogin,
+.login-page .walletLogin {
+  min-width: 20vw !important;
+  width: 20vw !important;
+}
+.login-page .drawer-content .btn {
+  border-radius: 20px;
+  font-size: min(max(0.9166666667rem, 1.1vw), 1.2rem);
+  margin-left: 0;
+  background-color: #23272b;
+  border-color: transparent;
+  color: #fff;
+  transition: all 0.3s;
+}
+.login-page body .btn {
+  border-color: transparent;
+}
+.login-page .btn:hover {
+  color: #23272b;
+  background-color: #fff;
+}
+.login-page .drawer .errors,
+.login-page .forgot-password-modal .errors {
+  color: red;
+  opacity: 0.8;
+  font-size: 14px;
+  margin-top: 5px;
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+.login-page .drawer .input-actions {
+  display: block;
+}
+.login-page .forgot-password-modal {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999999999;
+  background-color: #35d6ed;
+  padding: 50px;
+  transform: translateX(-100%);
+  transition: all 0.3s;
+}
+.login-page .forgot-password-modal .forgot-password-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.login-page .forgot-password-modal .forgot-password-header a {
+  color: #fff;
+}
+.login-page .forgot-password-modal .forgot-password-header .go-back-button img {
+  vertical-align: middle;
+}
+.login-page .forgot-password-modal .forgot-password-content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: relative;
+}
+.login-page .forgot-password-modal .forgot-password-content .security-notice {
+  border: solid 1px white;
+  border-radius: 10px;
+  padding: 20px 50px;
+  color: #000;
+  font-weight: normal;
+}
+.login-page .forgot-password-modal .forgot-password-content a {
+  color: #fff;
+  margin: 20px 0;
+}
+.login-page .forgot-password-modal .forgot-password-content .security-notice p {
+  margin: 0;
+  font-weight: normal;
+}
+.login-page .forgot-password-modal .new-password-form {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.login-page .forgot-password-modal .new-password-form .forgot-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 40%;
+  margin-top: 20px;
+}
+.login-page .forgot-password-modal .new-password-form .forgot-form input {
+  min-height: 55px;
+}
+.login-page .forgot-password-modal .new-password-form .forgot-form button {
+  align-self: center;
+}
+.login-page .forgot-password-modal .new-password-form .forgot-form p {
+  margin: 0;
+}
+.login-page .forgot-password-modal .new-password-form .forgot-form .error {
+  color: red;
+  opacity: 0.8;
+  font-size: 14px;
+}
+.login-page .forgot-password-modal p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.login-page .forgot-password-modal h3 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 1.75rem;
+}
+.login-page .forgot-password-modal .forgot-input-form {
+  position: relative;
+}
+.login-page .forgot-password-modal .forgot-input-form .next-forgot {
+  position: absolute;
+  top: 50%;
+  right: -60px;
+  margin: 0;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.login-page .forgot-password-modal .form-control {
+  border-radius: 10px;
+}
+.login-page .forgot-password-modal .forgot-input-form input[type=text] {
+  appearance: none;
+  -webkit-appearance: none;
+  height: 100px;
+  width: 50px;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  text-align: center;
+  background-color: #2ebace;
+  color: #fff;
+  font-weight: 300;
+  font-size: 40px;
+  margin-right: 5px;
+}
+.login-page .forgot-password-modal .forgot-input-form input[type=text]:disabled {
+  color: rgba(255, 255, 255, 0.4);
+}
+.login-page .forgot-password-modal .forgot-input-form input[type=text]::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 300;
+  font-size: 40px;
+}
+.login-page .forgot-password-modal .forgot-input-form input[type=text]::-webkit-outer-spin-button,
+.login-page .forgot-password-modal .forgot-input-form input[type=text]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.login-page .forgot-password-modal .btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  color: #23a0c4;
+  border-radius: 10px;
+  padding-left: 35px;
+  padding-right: 35px;
+  font-size: clamp(1rem, 1.6666666667rem, 1.3vw);
+}
+.login-page .drawer .drawer-content .btn-gradient {
+  background: linear-gradient(90deg, #b93d46 0%, #94488b 100%);
+  color: #fff;
+  border: solid 1px transparent;
+}
+.login-page .drawer .drawer-content .btn-white:hover {
+  color: #fff;
+  background-color: #23272b;
+}
+
+.register-page {
+  min-height: 100vh;
+}
+.register-page .intl-tel-input {
+  width: 100%;
+}
+.register-page .intl-tel-input.allow-dropdown input {
+  width: 100%;
+}
+.register-page.body-bg {
+  background-image: url(../assets/img/body-bg.jpg);
+  background-size: contain;
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-color: #1e8cb1;
+}
+.register-page.user-bg main {
+  background-image: url(../assets/img/user-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #1e8cb1;
+}
+.register-page .errors {
+  color: red;
+  opacity: 0.8;
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.register-compaign-content {
+  width: 100%;
+  background-color: white;
+  height: auto;
+}
+
+.register-compaign-content-thanks {
+  width: 100%;
+  background-color: white;
+  height: 100vh;
+}
+.register-compaign-content-thanks .register-with-campaign {
+  width: calc(100% - 124px);
+  height: 100%;
+  margin: 0 auto;
+  padding: 18px 0 0 0 !important;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.register-compaign-content-thanks .register-with-campaign .header {
+  border-radius: 10px 10px 20px 20px;
+  height: auto;
+  overflow: unset;
+  margin-bottom: 0 !important;
+}
+.register-compaign-content-thanks .register-with-campaign .container {
+  height: 100% !important;
+  display: flex;
+  align-items: center;
+}
+
+.register-with-campaign {
+  width: calc(100% - (2 * 62px));
+  margin: 0 auto;
+  padding: 18px 0 60px 0;
+  background-color: white;
+}
+.register-with-campaign .campaign-ended-content {
+  width: fit-content;
+  margin: 0 auto;
+  color: #000;
+  text-align: center;
+}
+.register-with-campaign .intl-tel-input {
+  width: 100%;
+}
+.register-with-campaign .intl-tel-input input {
+  width: 100%;
+}
+.register-with-campaign .header {
+  border-radius: 10px 10px 20px 20px;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+.register-with-campaign .header .banner_image {
+  width: 100%;
+  height: 293px;
+  object-fit: cover;
+}
+.register-with-campaign .header .logo {
+  width: 187px;
+  height: 187px;
+  position: absolute;
+  margin-top: -74px;
+  margin-left: 86px;
+}
+.register-with-campaign .header .banner_image img,
+.register-with-campaign .header .logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.register-with-campaign .header .campaign-title {
+  width: 100%;
+  height: 62px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+}
+.register-with-campaign .header .campaign-title h2 {
+  font-size: 35px !important;
+}
+.register-with-campaign .header .campaign-info {
+  padding: 34px 0 20px 357px;
+  display: flex;
+  align-items: stretch;
+  justify-content: start;
+  background-color: #efefef;
+}
+.register-with-campaign .header .campaign-info .campaign-info-item {
+  position: relative;
+  padding: 0 40px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 79%;
+  text-transform: uppercase;
+  color: #000000;
+}
+.register-with-campaign .header .campaign-info .campaign-info-item.middle {
+  align-self: center;
+}
+.register-with-campaign .header .campaign-info .campaign-info-item .official-link {
+  background: #000000;
+  border-radius: 2px;
+  padding: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  display: block;
+  width: fit-content;
+}
+.register-with-campaign .header .campaign-info .campaign-info-item p.title {
+  font-weight: 600;
+  line-height: 22px;
+  color: #000000;
+  text-transform: none;
+  margin-bottom: 16px;
+}
+.register-with-campaign .header .campaign-info .campaign-info-item .value {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 15px;
+}
+.register-with-campaign .header .campaign-info .campaign-info-item .value span {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 32px;
+  color: #000000;
+}
+.register-with-campaign .header .campaign-info .campaign-info-item .value .crypto {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.register-with-campaign .header .campaign-info .campaign-info-item .value sup {
+  top: -15px;
+  text-transform: capitalize;
+}
+.register-with-campaign .header .campaign-info .campaign-info-item:after {
+  content: "";
+  border-right: 1px solid #8f8f8f;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+}
+.register-with-campaign .header .campaign-info .campaign-info-item:first-child {
+  padding-left: 0;
+}
+.register-with-campaign .header .campaign-info .campaign-info-item:last-child {
+  padding-right: 0;
+}
+.register-with-campaign .header .campaign-info .campaign-info-item:last-child:after {
+  content: unset;
+}
+.register-with-campaign .campaign-content {
+  width: 70%;
+  margin: 0 auto 60px;
+}
+.register-with-campaign .container {
+  width: 60%;
+}
+.register-with-campaign .container .report-scam {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6c757d;
+  margin: 30px auto 0;
+  width: fit-content;
+  display: block;
+  background-color: transparent;
+  border: 0;
+}
+.register-with-campaign .container .report-scam svg {
+  margin-right: 8px;
+}
+.register-with-campaign .container label {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+.register-with-campaign .container input,
+.register-with-campaign .container select {
+  border: 1px solid #c2c7cf;
+  border-radius: 4px;
+}
+.register-with-campaign .container .form-input-checkbox label {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+.register-with-campaign .container .form-input-checkbox label a {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #747474;
+  text-decoration: underline;
+}
+.register-with-campaign .container .btn.btn-submit {
+  display: block;
+  background: #8dc73f;
+  border-radius: 26px;
+  padding: 10px 23px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 28px;
+  color: #ffffff;
+  margin: 70px auto 0;
+}
+@media only screen and (max-width: 767px) {
+  .register-with-campaign {
+    width: 100%;
+    padding-left: 23px;
+    padding-right: 23px;
+  }
+  .register-with-campaign .header .banner_image {
+    height: 149px;
+  }
+  .register-with-campaign .header .logo {
+    max-width: 69px;
+    max-height: 69px;
+    width: 100%;
+    height: 100%;
+    margin-top: -55px;
+    margin-left: 19px;
+  }
+  .register-with-campaign .header .campaign-info {
+    padding: 30px;
+    flex-wrap: wrap;
+  }
+  .register-with-campaign .header .campaign-info .campaign-info-item {
+    width: 50%;
+  }
+  .register-with-campaign .header .campaign-info .campaign-info-item::after {
+    content: unset;
+  }
+  .register-with-campaign .header .campaign-info .campaign-info-item:nth-child(1), .register-with-campaign .header .campaign-info .campaign-info-item:nth-child(3) {
+    padding-left: 0;
+    border-right: 1px solid #8f8f8f;
+  }
+  .register-with-campaign .header .campaign-info .campaign-info-item:nth-child(1), .register-with-campaign .header .campaign-info .campaign-info-item:nth-child(2) {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #8f8f8f;
+  }
+  .register-with-campaign .header .campaign-info .campaign-info-item:nth-child(3), .register-with-campaign .header .campaign-info .campaign-info-item:nth-child(4) {
+    padding-top: 10px;
+  }
+  .register-with-campaign .campaign-content {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .register-with-campaign .container {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .register-with-campaign {
+    width: 100%;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .register-with-campaign .header .banner_image {
+    height: 224px;
+  }
+  .register-with-campaign .header .logo {
+    max-width: 110px;
+    max-height: 110px;
+    width: 100%;
+    height: 100%;
+    margin-left: 46px;
+  }
+  .register-with-campaign .header .campaign-info {
+    padding: 30px;
+  }
+  .register-with-campaign .campaign-content {
+    width: 100%;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+  .register-with-campaign .container {
+    width: 100%;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}

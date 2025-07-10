@@ -1,0 +1,100 @@
+@use './variables';
+
+aside {
+  display: flex;
+  flex: 0 1 $sidebarWidth;
+  flex-wrap: wrap;
+  min-width: 0;
+  background-color: $backgroundColor;
+  .sidebar {
+    flex: 1;
+    padding: 30px;
+    font-family: 'Poppins', sans-serif;
+    justify-content: flex-start;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    h3 {
+      font-size: 25px;
+      color: #05506d;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      margin-bottom: 37px;
+      text-align: right;
+    }
+    .nft-nav-buttons {
+      flex-direction: column;
+    }
+    &.description {
+      text-align: center;
+      h3 {
+        margin: 0;
+        font-weight: normal;
+        font-size: 18px;
+        margin-bottom: 30px;
+      }
+      p {
+        font-size: 13px;
+      }
+      a {
+        margin-top: 15px;
+        font-weight: 600;
+        font-size: 14px;
+        color: #000;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.nft-nav-buttons {
+  display: flex;
+  grid-gap: 25px;
+  gap: 25px;
+  width: 100%;
+  button {
+    text-align: right;
+    padding: 13px 18px;
+    color: $buttonText;
+    border-radius: 10px;
+    border: 1px solid $borderLight;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+    background-color: $fullWhite;
+    transition: all 0.3s;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    .nft-count {
+      font-size: 10px;
+      background-color: $buttonText;
+      color: $fullWhite;
+      border-radius: 50%;
+      height: 17px;
+      width: 17px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.3s;
+    }
+    &:hover {
+      background-color: $buttonText;
+      color: $fullWhite;
+      cursor: pointer;
+      .nft-count {
+        background-color: $fullWhite;
+        color: $buttonText;
+      }
+    }
+    &.active {
+      color: $fullWhite;
+      background-color: $buttonText;
+      border: solid 1px transparent;
+      .nft-count {
+        background-color: $fullWhite;
+        color: $buttonText;
+      }
+    }
+  }
+}

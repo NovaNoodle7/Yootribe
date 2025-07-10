@@ -1,0 +1,210 @@
+@use './variables';
+
+#app-header {
+  background-color: $cyanHeader;
+
+  .mobile-menu-button {
+    display: none;
+
+    width: 26px;
+    height: 26px;
+    fill: #fff;
+
+    & :nth-child(1),
+    & :nth-child(2) {
+      transition: all 0.2s ease-in-out;
+    }
+
+    &:hover,
+    &.active {
+      & :nth-child(1) {
+        transform: translateX(26px * 2);
+      }
+      & :nth-child(2) {
+        transform: translateX(-(26px * 2));
+      }
+    }
+  }
+
+  .right-items {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+
+    & + .help {
+      margin-top: 15px;
+    }
+  }
+
+  .header-inner-wrapper {
+    // padding: 33px 0;
+    padding: 16px 0;
+    position: relative;
+
+
+ @media only screen and (max-width: 1024px) {
+   width:100%;
+   }
+    .header-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .right-column {
+      flex-shrink: 0;
+    }
+
+    .main-logo {
+      button {
+        background-color: transparent;
+        border: none;
+      }
+      margin-right: 120px;
+    }
+    .header-nav {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      width: 100%;
+    }
+    .profile {
+      position: relative;
+      button {
+        color: $blackLightHeader;
+        background-color: transparent;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-gap: 15px;
+        gap: 15px;
+        &:hover {
+        }
+      }
+      svg {
+        height: 25px;
+        width: 25px;
+        fill: $blueHeader;
+      }
+      .profile-drowpdown {
+        position: absolute;
+        top: 125%;
+        right: 30px;
+        background-color: $primary;
+        z-index: 500;
+        border: solid 1px rgba(255, 255, 255, 0.15);
+        width: max-content;
+        display: none;
+        background: #fff;
+        padding: 1rem;
+        box-shadow: 0 5px 10px 0 rgb(47 47 47 / 16%);
+        padding: 0;
+        button {
+          padding: 1rem;
+          text-align: left;
+          display: block;
+          min-width: 200px;
+          &:nth-child(2) {
+            border-top: 1px solid #d6d6d6;
+          }
+          &:hover {
+            background-color: #f6f6f6;
+          }
+        }
+        &.shown {
+          display: inherit;
+        }
+      }
+    }
+    .help {
+      margin-left: 10px;
+      color: #fff;
+      a {
+        font-weight: bold;
+        color: #fff;
+        padding-left: 5px;
+      }
+    }
+    .main-nav {
+      display: flex;
+      align-items: center;
+      gap: 60px;
+      padding-right: 45px;
+      flex-wrap: wrap;
+
+      button {
+        background-color: transparent;
+        border: none;
+        font-size: 28px;
+        line-height: 25px;
+        position: relative;
+        color: $blueDarktext;
+        &.active {
+          color: #fff;
+        }
+
+        &:hover {
+          color: #fff;
+        }
+        .current-counter {
+          position: absolute;
+          font-size: 12px;
+          background-color: $buttonText;
+          vertical-align: middle;
+          height: 20px;
+          width: 20px;
+          border-radius: 50%;
+          font-weight: bold;
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          color: #fff;
+          margin-left: 1px;
+          margin-top: -6px;
+        }
+      }
+      @media only screen and (max-width: 767px) {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      .mobile-menu-button {
+        display: block;
+      }
+
+      .main-nav {
+        display: none !important;
+      }
+      .header-nav {
+        justify-content: end;
+      }
+      .main-logo {
+        margin: 0;
+      }
+
+    }
+  }
+
+  .top-bar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    display: flex;
+    align-items: flex-end;
+
+    .help {
+      margin-left: auto;
+      color: #fff;
+      a {
+        font-weight: bold;
+        color: #fff;
+        padding-left: 5px;
+      }
+    }
+  }
+}

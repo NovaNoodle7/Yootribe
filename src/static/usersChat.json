@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Marjo795",
+    "message": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    "time_sent": "2022-12-22T16:20:23.648Z",
+    "message_type": "sent"
+  },
+  {
+    "name": "You",
+    "message": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,",
+    "time_sent": "2022-12-22T16:20:23.648Z",
+    "message_type": "received"
+  }
+]

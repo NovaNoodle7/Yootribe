@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Draft Campaign",
+    "type": "draft"
+  },
+  {
+    "name": "Live campaign",
+    "type": "live"
+  },
+  {
+    "name": "Whitelist resullts",
+    "type": "whitelisted"
+  }
+]
