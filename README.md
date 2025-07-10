@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Getting Started
 
 
@@ -36,4 +35,3 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 =======
 # Yootribe
->>>>>>> b5929d53dedf7292122fe1fa378ad6cb2364ca65
