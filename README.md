@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started
 
 
@@ -33,3 +34,6 @@ Your app is ready to be deployed!
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 
+=======
+# Yootribe
+>>>>>>> b5929d53dedf7292122fe1fa378ad6cb2364ca65
