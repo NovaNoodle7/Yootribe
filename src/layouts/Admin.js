@@ -13,6 +13,7 @@ export const CompanyLayout = () => {
   return (
     <>
       <AppHeader />
+      {/* fixed Admin layout */}
       <Outlet />
     </>
   );
